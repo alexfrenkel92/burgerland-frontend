@@ -1,6 +1,7 @@
 # BurgerLand
 
-A simple frontend app built for practice with React, using hooks and redux.
+A SPA built for practice with React, using Hooks and Redux.
+Backend is served by Firebase.
 
 ## This demo is deployed on the link below
 
