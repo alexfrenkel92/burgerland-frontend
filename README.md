@@ -6,7 +6,7 @@ Backend is served by Firebase.
 ## This demo is deployed on the link below
 
 ```
-https://puzzlengo.herokuapp.com/
+https://burgerland1.herokuapp.com/
 ```
 
 ## Login details
