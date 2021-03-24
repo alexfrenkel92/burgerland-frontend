@@ -5,9 +5,7 @@ Backend is served by Firebase.
 
 ## This demo is deployed on the link below
 
-```
 [link to DEMO!](https://burgerland1.herokuapp.com/)
-```
 
 ## Login details
 
