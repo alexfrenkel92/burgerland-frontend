@@ -1,0 +1,19 @@
+.Checkout {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .Checkout {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Checkout {
+    padding: 0;
+  }
+}

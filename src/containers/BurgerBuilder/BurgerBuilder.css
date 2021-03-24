@@ -1,0 +1,19 @@
+.BurgerBuilder {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .BurgerBuilder {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    .BurgerBuilder {
+        padding: 0;
+    }
+}

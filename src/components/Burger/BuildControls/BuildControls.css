@@ -1,54 +1,71 @@
 .BuildControls {
-    width: 100%;
-    background-color: #CF8F2E;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    box-shadow: 0 2px 1px #ccc;
-    margin: auto;
-    padding: 10px 0 20px 0;
-    position: absolute;
-    bottom: 0;
+  width: fit-content;
+  background-color: #f3eada;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 30px auto 30px auto;
+  padding: 10px 50px 20px 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .BuildControls {
+    margin: 20px auto;
+    padding: 10px 10px 20px 10px;
+  }
 }
 
 .OrderButton {
-    background-color: #DAD735;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid #966909;
-    color: #966909;
-    font-family: inherit;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    margin: 20px;
-    box-shadow: 2px 2px 2px #966909;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin: 40px 20px 20px 20px;
+  color: whitesmoke;
+  background-color: #7abe8f;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+  transition: all 200ms ease-in-out;
 }
 
-.OrderButton:hover, .OrderButton:active {
-    background-color: #A0DB41;
-    border: 1px solid #966909;
-    color: #966909;
+.OrderButton:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+  -webkit-animation: gradientBG 1.5s ease-in-out forwards;
+  animation: gradientBG 1.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+.OrderButton:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px);
 }
 
 .OrderButton:disabled {
-    background-color: #C7C6C6;
-    cursor: not-allowed;
-    border: 1px solid #ccc;
-    color: #888888;
+  background-color: #c7c6c6;
+  cursor: not-allowed;
+  color: #888888;
+  font-weight: 600;
 }
 
 .OrderButton:not(:disabled) {
-    animation: enable 0.3s linear;
+  animation: enable 0.3s linear;
 }
 
 @keyframes enable {
-    0% {
-        transform: scale(1);
-    }
-    60% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
