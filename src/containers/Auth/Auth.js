@@ -113,6 +113,7 @@ const auth = props => {
     <div className={classes.Auth}>
       {authRedirect}
       {errorMessage}
+      <h2>Sign in to order</h2>
       <form onSubmit={submitHandler}>
         {form}
         <Button btnType="Success">SUBMIT</Button>
